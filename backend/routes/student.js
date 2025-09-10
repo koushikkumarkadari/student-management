@@ -9,7 +9,7 @@ const {
   deleteStudent,
   getProfile,
   updateProfile,
-} = require('../controllers/StudentController');
+} = require('../controllers/studentController');
 router.get('/profile', protect, getProfile);
 router.put('/profile', protect, updateProfile);
 router.get('/', protect, admin, getAllStudents);
